@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Satish Kumar - Computer Science Student & Software Developer">
+    <title>Satish Kumar - Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Satish<span>Kumar</span></div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Satish Kumar</h1>
+                    <h2 class="hero-title">Software Developer</h2>
+                    <p class="hero-description">Passionate Computer Science student specializing in web development, AI applications, and building innovative solutions with modern technologies.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Hire Me</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/thirukoti-satish-kumar-4363a6307" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Satishtirukoti" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="mailto:tsatish7444@gmail.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <!-- FIX 1: photo fallback — shows initials if photo.jpg is missing -->
+                        <img src="photo.jpg" alt="Satish Kumar" onerror="this.style.display='none'; document.getElementById('photo-fallback').style.display='flex';">
+                        <div id="photo-fallback" class="photo-fallback" style="display:none;">SK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- FIX 1 (about): same fallback for about section photo -->
+                    <img src="photo.jpg" alt="Satish Kumar" onerror="this.style.display='none'; document.getElementById('about-photo-fallback').style.display='flex';">
+                    <div id="about-photo-fallback" class="about-photo-fallback" style="display:none;">SK</div>
+                </div>
+                <div class="about-text">
+                    <h3>Computer Science Student & Developer</h3>
+                    <p>Hello! I'm Satish Kumar, a motivated Computer Science student currently pursuing my B.Tech at Vignan Institute of Technology & Science, Deshmukhi. With a strong academic record of 90%, I am passionate about leveraging technology to create innovative solutions.</p>
+                    <p>I have strong skills in Java, C, Python, and web technologies including HTML, CSS, JavaScript, Node.js, and React. I'm familiar with the basics of DevOps and deeply interested in applying Artificial Intelligence to real-world projects.</p>
+                    <p>Currently, I'm actively involved in group projects and academic research-based development activities as an Academic Collaborator & Project Contributor.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>tsatish7444@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7032745885</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Hyderabad, India</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.Tech in CS (2023-2027)</span>
+                        </div>
+                    </div>
+                    <div class="languages">
+                        <h4>Languages</h4>
+                        <div class="language-tags">
+                            <span>Telugu (Native)</span>
+                            <span>English (Fluent)</span>
+                            <span>Hindi (Proficient)</span>
+                        </div>
+                    </div>
+                    <div class="hobbies">
+                        <h4>Hobbies & Interests</h4>
+                        <div class="hobby-items">
+                            <!-- FIX 2: replaced fa-cricket (doesn't exist) with fa-trophy -->
+                            <div class="hobby-item">
+                                <i class="fas fa-trophy"></i>
+                                <span>Cricket</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-code"></i>
+                                <span>Coding</span>
+                            </div>
+                            <div class="hobby-item">
+                                <i class="fas fa-puzzle-piece"></i>
+                                <span>Puzzles</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>My Projects</h2>
+                <div class="underline"></div>
+                <p>Explore my recent work and innovative solutions</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800&h=500&fit=crop" alt="Hand Cricket Game">
+                        <div class="project-overlay">
+                            <a href="https://satishtirukoti.github.io/hand-cricket-game/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Satishtirukoti/hand-cricket-game.git" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Hand Cricket Game</h3>
+                        <p>Full-stack web application with real-time scoring and MySQL database integration.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?w=800&h=500&fit=crop" alt="Criminal Tracking System">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Satishtirukoti" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Criminal Tracking System</h3>
+                        <p>AI-based facial recognition system for real-time security monitoring and alerts.</p>
+                        <div class="tech-stack">
+                            <span>Java</span>
+                            <span>Python</span>
+                            <span>AI/ML</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=800&h=500&fit=crop" alt="FocusFlow">
+                        <div class="project-overlay">
+                            <a href="https://satishtirukoti.github.io/FocusFlow/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Satishtirukoti/FocusFlow.git" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>FocusFlow</h3>
+                        <p>Productivity app with task tracking, pomodoro timer, and progress analytics.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>React</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=800&h=500&fit=crop" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Satishtirukoti" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-featured online shopping platform with authentication and payment gateway.</p>
+                        <div class="tech-stack">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=500&fit=crop" alt="Healthcare Dashboard">
+                        <div class="project-overlay">
+                            <a href="https://satishtirukoti.github.io/health-dashboard/" target="_blank" class="overlay-btn"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/Satishtirukoti/health-dashboard" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>National Healthcare Oversight Dashboard</h3>
+                        <p>Real-time Healthcare Dashboard using HTML, CSS, JavaScript, and Node.js to visualize national health analytics.</p>
+                        <div class="tech-stack">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Chart.js</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800&h=500&fit=crop" alt="Smart-Route">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Satishtirukoti" target="_blank" class="overlay-btn"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Smart-Route</h3>
+                        <p>Delivery route optimization desktop application with interactive GUI, animated route visualization, and exportable results.</p>
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Tkinter</span>
+                            <span>Matplotlib</span>
+                            <span>Pillow</span>
+                            <span>NumPy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="underline"></div>
+                <p>Technologies and tools I work with</p>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>Web Technologies</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-database"></i>
+                        <h3>Database & Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">GitHub</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="underline"></div>
+                <p>My academic journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2023 - 2027</span>
+                        <h3>Bachelor of Technology in Computer Science</h3>
+                        <h4>Vignan Institute of Technology & Science</h4>
+                        <p class="percentage">Percentage: 90.00%</p>
+                        <p>Pursuing comprehensive education in computer science with focus on software development, AI, and modern web technologies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2021 - 2023</span>
+                        <h3>Senior Secondary (XII), Science</h3>
+                        <h4>Narayana Junior College, Dilsuknagar</h4>
+                        <p class="percentage">Percentage: 97.00%</p>
+                        <p>Completed intermediate education with outstanding performance in Mathematics, Physics, and Chemistry.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="timeline-date">2011 - 2021</span>
+                        <h3>Secondary (X), SSC</h3>
+                        <h4>Sankeerth Grammar High School</h4>
+                        <p class="percentage">CGPA: 10.00/10</p>
+                        <p>Achieved perfect score in secondary education with strong foundation in all subjects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="certifications">
+                <div class="section-header">
+                    <h2>Certifications</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="cert-grid">
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>GenAI Powered Data Analytics</h3>
+                        <p class="cert-provider">TATA & Forage</p>
+                        <p class="cert-date">July 2025</p>
+                        <p class="cert-desc">Job simulation with exploratory data analysis, AI-powered delinquency prediction, and strategic collections implementation.</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fab fa-java"></i></div>
+                        <h3>Programming in Java</h3>
+                        <p class="cert-provider">NPTEL</p>
+                        <p class="cert-date">Jan 2025 - Apr 2025</p>
+                        <p class="cert-desc">Advanced Java programming, OOP design, and software development practices.</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fas fa-project-diagram"></i></div>
+                        <h3>Data Structures Through Java</h3>
+                        <p class="cert-provider">NPTEL</p>
+                        <p class="cert-date">Jul 2024 - Oct 2024</p>
+                        <p class="cert-desc">Fundamental and advanced data structures, algorithms, and complexity analysis.</p>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python Programming</h3>
+                        <p class="cert-provider">CISCO</p>
+                        <p class="cert-date">Aug 2023 - Nov 2023</p>
+                        <p class="cert-desc">Python fundamentals, advanced techniques, modules, and application development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Achievements</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>Top 5% Academic Rank</h3>
+                    <p>Consistently ranked in top 5% throughout B.Tech program with exceptional performance.</p>
+                    <span class="achievement-year">2023 - Present</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-medal"></i></div>
+                    <h3>Perfect CGPA 10.0</h3>
+                    <p>Achieved perfect 10.0 CGPA in Secondary School examinations.</p>
+                    <span class="achievement-year">2021</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>97% in Intermediate</h3>
+                    <p>Secured 97% in Senior Secondary with Science stream focus.</p>
+                    <span class="achievement-year">2023</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-code"></i></div>
+                    <h3>Technical Clubs</h3>
+                    <p>Active participant in coding contests and technical community events.</p>
+                    <span class="achievement-year">Ongoing</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-laptop-code"></i></div>
+                    <h3>Hackathon Participant</h3>
+                    <p>Participated in multiple hackathons developing innovative solutions.</p>
+                    <span class="achievement-year">2024 - 2025</span>
+                </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon"><i class="fas fa-users"></i></div>
+                    <h3>Leadership</h3>
+                    <p>Volunteered in organizing college programs and technical events.</p>
+                    <span class="achievement-year">2023 - Present</span>
+                </div>
+            </div>
+            <div class="experience">
+                <div class="section-header">
+                    <h2>Experience</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div>
+                            <h3>Web Development Intern</h3>
+                            <p class="experience-company"><a href="https://vaultofcodes.in" target="_blank" rel="noopener noreferrer"><i class="fas fa-building"></i> VaultofCodes.in</a></p>
+                            <p class="experience-location"><i class="fas fa-map-marker-alt"></i> Remote</p>
+                        </div>
+                        <span class="experience-date">May 2025 — 1 Month</span>
+                    </div>
+                    <ul class="experience-list">
+                        <li>Completed a 1-month internship in Web Development at VaultofCodes.in</li>
+                        <li>Built and styled responsive web pages using HTML, CSS, and JavaScript</li>
+                        <li>Collaborated on real-world projects and implemented UI improvements</li>
+                        <li>Gained hands-on experience with professional development workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="underline"></div>
+                <p>Feel free to reach out for collaborations or opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-cards">
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="info-text">
+                                <h4>Email</h4>
+                                <a href="mailto:tsatish7444@gmail.com">tsatish7444@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-phone"></i></div>
+                            <div class="info-text">
+                                <h4>Phone</h4>
+                                <a href="tel:+917032745885">+91 7032745885</a>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="info-text">
+                                <h4>Location</h4>
+                                <p>Hyderabad, India</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-connect">
+                        <h4>Connect With Me</h4>
+                        <div class="social-buttons">
+                            <a href="https://linkedin.com/in/thirukoti-satish-kumar-4363a6307" target="_blank" class="social-btn">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/Satishtirukoti" target="_blank" class="social-btn">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <h3>Send Message</h3>
+                    <!-- FIX 3: Formspree integration — replace YOUR_FORM_ID with your actual Formspree form ID -->
+                    <form id="contactForm" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Satish Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
